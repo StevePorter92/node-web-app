@@ -1,5 +1,4 @@
 {
-  "ipcMode": null,
   "executionRoleArn": "arn:aws:iam::673597520656:role/dev-cluster-ECSTaskExecutionRole-1UU9ECJCJP52K",
   "containerDefinitions": [
     {
@@ -26,10 +25,6 @@
   ],
   "memory": "512",
   "taskRoleArn": "arn:aws:iam::673597520656:role/Dev-ServiceTaskRole",
-  "compatibilities": [
-    "EC2",
-    "FARGATE"
-  ],
   "family": "Dev-Service",
   "requiresCompatibilities": [
     "FARGATE"
