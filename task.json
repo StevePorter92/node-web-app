@@ -46,8 +46,6 @@
       "user": null,
       "readonlyRootFilesystem": null,
       "dockerLabels": {},
-      "systemControls": null,
-      "privileged": null,
       "name": "Dev-Service"
     }
   ],
