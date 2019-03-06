@@ -1,0 +1,34 @@
+{
+  "executionRoleArn": "arn:aws:iam::113287485990:role/dev-cluster-ECSTaskExecutionRole-Q0EXYU74D7B8",
+  "containerDefinitions": [
+    {
+      "dnsSearchDomains": [],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/dev-cluster/Dev-Service/TaskDefinition",
+          "awslogs-region": "eu-west-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "portMappings": [
+        {
+          "hostPort": 8080,
+          "protocol": "tcp",
+          "containerPort": 8080
+        }
+      ],
+      "image": "772289811278.dkr.ecr.eu-west-1.amazonaws.com/test-cross-account-ecr:latest",
+      "essential": true,
+      "name": "Dev-Service"
+    }
+  ],
+  "memory": "512",
+  "taskRoleArn": "arn:aws:iam::113287485990:role/Dev-ServiceTaskRole",
+  "family": "Dev-Service",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "networkMode": "awsvpc",
+  "cpu": "256"
+}
